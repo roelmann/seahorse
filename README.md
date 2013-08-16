@@ -1,10 +1,7 @@
 Seahorse
 ========
-This is NOT a complete theme - it is an area where I am experimenting with the
-flexbox layout for Moodle.
-Please note browser support for flexbox is limited. Please ensure you have the
-latest version of your browser and check http://caniuse.com/flexbox for
-compatability.
+This is an experimental theme currently in Alpha. It builds on experimental work
+I have been doing using the flexbox layout model for Moodle themes.
 
 seahorse currently links to base as parent for basic css styling, but
 applies its own page layout through the flexbox model.
