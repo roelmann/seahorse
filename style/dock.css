@@ -1,0 +1,74 @@
+/* For the dock and items on the dock */
+#dock {
+    background-color: [[setting:thememenu1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:thememenu1color]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(left, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(left, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(left, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to right, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+*/
+    border-right-color:[[setting:marketingcolor2]];
+}
+#dock .dockeditem_container {margin-top:10px;}
+#dock .dockeditem {
+    background-color: [[setting:themeheading1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheading1color]]), to([[setting:themeheading2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #[[setting:themeheading1color]], [[setting:themeheading2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #[[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+    border-radius:12px 0 0 0;
+    border-top:2px solid [[setting:themeheadingtextcolor]];
+    border-left:2px solid [[setting:themeheadingtextcolor]];
+    border-right:none;
+    border-bottom:1px solid [[setting:themeblock1color]];
+}
+#dock .dockeditem .firstdockitem {margin-top:1em;}
+#dock .dockeditem .dockedtitle {
+    border:none;
+}
+#dock .dockeditem .dockedtitle.activeitem {background-position:80% 0;}
+#dock .dockeditem .dockedtitle h2 {
+    margin:12px 0px;
+    color: [[setting:themeheadingtextcolor]];
+}
+
+/** For the panel the docked blocks are shown in */
+#dockeditempanel .dockeditempanel_content {
+    border:none;
+    background-color:transparent;
+}
+#dockeditempanel .dockeditempanel_hd {
+    border-radius:0 7px 0 0;
+    background-color: [[setting:themeheading1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheading1color]]), to([[setting:themeheading2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    color:[[setting:themeheadingtextcolor]];
+    font-size:1.2em;
+    border:1px solid [[setting:themeheadingtextcolor]];
+    border-bottom:3px solid [[setting:themeheadingtextcolor]];
+}
+#dockeditempanel .dockeditempanel_hd h2 {
+    font-size:1.5em;
+    color:[[setting:themeheadingtextcolor]];
+    padding:3px 0 0 3px;
+}
+#dockeditempanel .dockeditempanel_bd {
+    background-color: [[setting:themeblock1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeblock1color]]), to([[setting:themeblock2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeblock1color]], [[setting:themeblock2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeblock1color]], [[setting:themeblock2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeblock1color]], [[setting:themeblock2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeblock1color]], [[setting:themeblock2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    border-radius:0;
+    border-right:1px solid [[setting:themeheading1color]];
+    border-bottom:1px solid [[setting:themeheading1color]];
+    overflow-x:hidden;
+}
+/* block expansion code */
+.block_js_expansion .block_tree {overflow-x:scroll;}
+.block_js_expansion.mouseover .content {width:200%;z-index:1000;position:relative;}
+.block_js_expansion.mouseover .content .block_tree {width:100%; background-color:#FAFAFA; padding-bottom:0px;}
+

@@ -1,0 +1,128 @@
+header, footer {
+    margin: 0;
+    width:100%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background-color: [[setting:themeheading1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheading1color]]), to([[setting:themeheading2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+}
+header {
+    height:150px;
+}
+    
+#page-header {
+    background: transparent url([[setting:logo]]) no-repeat 15px 15px;
+    height:100px;
+}
+.dir-rtl #page-header {
+    background: transparent url([[setting:logo]]) no-repeat 98% 15px;
+}
+.dir-rtl .headermenu .langmenu select {
+    float:left;
+}
+#page-header .headermain {
+    color: [[setting:themeheadingtextcolor]];
+    text-shadow: 1px 1px 1px [[setting:thememenu1color]];
+    margin-left: 91px;
+    margin-top: 73px;
+}
+.headermenu {
+    font-size:1em;
+}
+.logininfo {
+    color:[[setting:themeheadingtextcolor]];
+}
+.logininfo a, .logininfo a:hover, .logininfo a:visited {
+    color:[[setting:thememenu2color]];
+}
+
+/* Custom Menu 
+   ----------- */
+
+nav#menu {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    background: none repeat scroll 0 0 transparent;
+}
+.nav {
+    width: 90%;
+    margin: -25px auto 0 auto;
+    padding-left: 15px;
+    border-radius: 17px 17px 0 0;
+    border: 1px solid [[setting:themeheadingtextcolor]];
+    background-color: [[setting:thememenu1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:thememenu1color]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+.nav > li {
+    border-top: 3px solid [[setting:themeheadingtextcolor]];
+    border-left: 2px solid [[setting:thememenu1color]];
+    border-radius: 17px 0 0 0;
+    padding-right:15px;
+    margin-left:-15px;
+    color:[[setting:themeheading2color]];
+}
+.nav li a {
+    color:[[setting:themeheading2color]];
+}
+.nav li a:hover {
+    color:[[setting:themeheading1color]];
+}
+.nav li li a {
+    background: none repeat scroll 0 0 [[setting:thememenu1color]];
+    border-top: 1px solid [[setting:thememenu2color]];
+}
+.nav li li li a {
+    background: none repeat scroll 0 0 [[setting:thememenu2color]];
+    border-top: 1px solid [[setting:themeheadingtextcolor]];
+}
+.toggleMenu {
+    margin: -25px 0 0 5%;
+    border-radius: 17px;
+    border: 2px solid [[setting:themeheadingtextcolor]];
+    background-color: [[setting:thememenu1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:thememenu1color]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    color: [[setting:themeheading2color]];
+    display: none;
+    padding: 10px 15px;
+}
+@media screen and (max-width: 720px) {
+    .nav {
+        width:50%;
+        margin:-25px auto 0 auto;
+    }
+}
+/* Breadcrumbs
+   ----------- */
+nav#breadcrumb {
+    border: none;
+    border-radius: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    background: none repeat scroll 0 0 transparent;
+}
+
+/* Footer
+   ------ */
+
+footer .social {
+    padding-top:15px;
+}
+footer .social img {
+    margin:0 5px;
+}

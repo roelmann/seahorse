@@ -1,0 +1,27 @@
+/*Standard elements - duplicated from core.css*/
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.75em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4, h5, h6 {
+    font-size: 1.1em;
+    margin:0.5em 0;
+}
+p {
+    font-size: 1em;
+}
+em {
+    font-style: italic;
+}
+th, td {
+    border: 1px solid [[setting:themeheading1color]];
+}
+th {
+    background-color: [[setting:themeblock1color]];
+}
+
