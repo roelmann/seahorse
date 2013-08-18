@@ -27,9 +27,11 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2013051400;
+$plugin->version   = 2013081800;
 $plugin->requires  = 2013040500;
 $plugin->component = 'theme_seahorse';
+$plugin->maturity  = MATURITY_BETA;
+$plugin->release   = '0.8';
 $plugin->dependencies = array(
     'theme_base'  => 2013050100,
 );

@@ -221,7 +221,8 @@
     float:left;
     border:1px solid [[setting:themeheading1color]];
     border-radius:7px;
-    height: 250px;
+/*    height: 250px; */
+    height:130px;
 }
 #page-site-index #frontpage-course-list .courses .coursebox h3.name {
     width:98%;
@@ -231,10 +232,11 @@
     border-bottom:2px dashed [[setting:themeheading1color]];
 }
 #page-site-index #frontpage-course-list .courses .coursebox .content .summary {
-    width:98%;
+    display:none;
+/*    width:98%;
     margin:0 auto;
     height:120px;
-    overflow:hidden;
+    overflow:hidden; */
 }
 #page-site-index #frontpage-course-list .courses .coursebox .content .courseimage {
     width:98%;
@@ -247,6 +249,9 @@
     float:none;
     max-width:100%;
     height:75px;
+}
+#page-site-index #frontpage-course-list .courses .coursebox .content ul.teachers {
+    display:none;
 }
 
 /* Smaller screens
