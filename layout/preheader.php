@@ -8,10 +8,18 @@ if(!empty($PAGE->theme->settings->layout)) {
     } else {
     $pagelayout='threecolhg';
 }
-$hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));
-$hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
+$pagelayoutcolumns='';
+if ($pagelayout=='onepre') {
+    $pagelayoutcolumns='onepre';
+    $pagelayout='threecolhg';
+}
+if ($pagelayout=='onepost') {
+    $pagelayoutcolumns='onepost';
+    $pagelayout='threecolhg';
+}
+$hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT) && ($pagelayoutcolumns != 'onepost'));
+$hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT) && ($pagelayoutcolumns != 'onepre'));
 $haslogininfo = (empty($PAGE->layout_options['nologininfo']));
-
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
 

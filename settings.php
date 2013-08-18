@@ -45,7 +45,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_seahorse/layout';
     $title = get_string('layout', 'theme_seahorse');
     $description = get_string('layoutdesc', 'theme_seahorse');
-    $choices = array('threecolhg'=>'3Column Holy Grail', 'blogleft'=>'2 sidebars Left', 'blogright'=>'2 sidebars Right');
+    $choices = array('threecolhg'=>'3Column Holy Grail', 'blogleft'=>'2 sidebars Left', 'onepre'=>'1 sidebar Left', 'blogright'=>'2 sidebars Right', 'onepost'=>'1 sidebar Right');
     $default = 'threecolhg';
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $setting->set_updatedcallback('theme_reset_all_caches');

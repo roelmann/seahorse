@@ -32,3 +32,9 @@ default setup of the theme - these enable different layouts to be used for
 different page types while the theme setting in general.php would apply to the 
 whole site. To use these layout files edit the config.php file to the required 
 pagetype to the layout (threecolhg, blogleft, blogright) as needed.
+
+Edit 18/8/13:
+1 sidebar column pre and post options have now been added to the settings page
+Additional 'spare' layout files for these options have also been added to the
+theme - these are NOT used by default in the theme but are present if an admin
+wishes to set different layouts for different page types.

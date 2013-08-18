@@ -12,7 +12,7 @@ include ('preheader.php'); //All the standard logic, <head> and <body> content i
     <?php } ?> <!-- End if course header -->
     
     <div id="page-content">
-        <div id='outerwrapper' <?php echo 'class = '.$pagelayout?> >
+        <div id='outerwrapper' class='threecolhg'>
             <section class='main'>
                 <article class='mainsection'>
                     <div id="region-main">
@@ -25,27 +25,12 @@ include ('preheader.php'); //All the standard logic, <head> and <body> content i
                 </article> <!-- Close article mainsection. -->
             </section> <!-- Close section main. -->
             
-            <?php if ($hassidepre) { ?>
-                <aside class='pre'>
-                    <div id="region-pre" class="block-region">
-                        <div class="region-content">
-                            <?php echo $OUTPUT->blocks_for_region('side-pre');
-                            if($pagelayoutcolumns=='onepre') {
-                                echo $OUTPUT->blocks_for_region('side-post');
-                            } ?>
-                        </div> <!-- Close region-content. -->
-                    </div> <!-- Close region-pre block-region. -->
-                </aside> <!-- Close aside pre. -->
-            <?php } ?> <!-- End if sidepre. -->
-            
             <?php if ($hassidepost) { ?>
                 <aside class='post'>
                     <div id="region-post" class="block-region">
                         <div class="region-content">
-                            <?php if($pagelayoutcolumns=='onepost') {
-                                echo $OUTPUT->blocks_for_region('side-pre');
-                            }
-                            echo $OUTPUT->blocks_for_region('side-post'); ?>
+                            <?php echo $OUTPUT->blocks_for_region('side-pre') 
+                            echo $OUTPUT->blocks_for_region('side-post') ?>
                         </div> <!-- Close region-content. -->
                     </div> <!-- Close region-post block-region. -->
                 </aside> <!-- Close aside post. -->

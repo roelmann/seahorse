@@ -38,7 +38,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-pre',
     ),
     'course' => array(
-        'file' => 'general.php',
+        'file' => 'coursetest.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre'
     ),
