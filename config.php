@@ -125,7 +125,7 @@ $THEME->layouts = array(
     ),
 );
 
-$THEME->hidefromselector = true;
+$THEME->hidefromselector = false;
 
 $THEME->enable_dock = true;
 
