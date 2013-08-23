@@ -4,14 +4,14 @@ include ('preheader.php'); //All the standard logic, <head> and <body> content i
 
 <div id="page">
     <?php
-    include ('header.php'); //The standard header for every page.
+    include ('seahorseheader.php'); //The standard header for every page.
     ?>
 
     <?php if (!empty($courseheader)) { ?> <!-- Course header callback -->
         <div id="course-header"><?php echo $courseheader; ?></div>
     <?php } ?> <!-- End if course header -->
     
-    <div id="page-content">
+    <div id="page-content" class="clearfix">
         <div id='outerwrapper' class='blogright'>
             <section class='main'>
                 <article class='mainsection'>
@@ -52,5 +52,5 @@ include ('preheader.php'); //All the standard logic, <head> and <body> content i
     <?php } ?><!-- End if course header -->
 
 <?php
-include ('footer.php');
+include ('seahorsefooter.php');
 ?>

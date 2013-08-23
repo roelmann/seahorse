@@ -24,6 +24,8 @@ $THEME->sheets = array(
     'headerfooter',
     'frontpage',
     'my',
+    'ie',
+    'custom' //Must be last - contains single rule applying customcss
 );
 
 $THEME->layouts = array(
@@ -38,7 +40,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-pre',
     ),
     'course' => array(
-        'file' => 'coursetest.php',
+        'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre'
     ),
@@ -139,7 +141,9 @@ $THEME->javascripts_footer = array(
     'jquery-1.7.2.min',
     'menubar',
 );
-
+if (check_browser_version('MSIE') && !check_browser_version('MSIE', '9.0') && !check_browser_version('MSIE', '10.0')) {
+    $THEME->javascripts[] = 'html5shiv';
+}
 // $THEME->larrow
 
 // $THEME->rarrow

@@ -71,20 +71,20 @@ if ($hasmarketingsmall3text) {
 ?>
 <div id="page">
     <?php
-    include ('header.php'); //The standard header for every page.
+    include ('seahorseheader.php'); //The standard header for every page.
     ?>
 
     <?php if (!empty($courseheader)) { ?> <!-- Course header callback -->
         <div id="course-header"><?php echo $courseheader; ?></div>
     <?php } ?> <!-- End if course header -->
     
-    <div id="page-content">
+    <div id="page-content" class="clearfix">
             <div class='marketingone clearfix'>
-                <div class='marketingoneimagelarge'>
-                     <img <?php echo 'src='.$mainmarketingimage.' id="image1"';?>>
-                </div>
                 <div class="marketingonetext">
                      <?php echo $mainmarketingtext;?>
+                </div>
+                <div class='marketingoneimagelarge'>
+                     <img <?php echo 'src='.$mainmarketingimage.' id="image1"';?>>
                 </div>
                 <div class='marketingoneimagesmall'>
                      <img <?php echo 'src='.$marketingsubimage1.' id="image1"';?>>
@@ -143,5 +143,5 @@ if ($hasmarketingsmall3text) {
     <?php } ?><!-- End if course header -->
 
 <?php
-include ('footer.php');
+include ('seahorsefooter.php');
 ?>

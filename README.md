@@ -38,3 +38,21 @@ Edit 18/8/13:
 Additional 'spare' layout files for these options have also been added to the
 theme - these are NOT used by default in the theme but are present if an admin
 wishes to set different layouts for different page types.
+
+IE Fallbacks
+------------
+Because the theme is built primarily on the flexbox model, this has implications
+for the use of older browsers. See http://caniuse/flexbox for more details.
+the biggest issue is that IE only supports flexbox from IE10 onwards - with IE8
+not supporting HTML5 either. IE9 users should be in a position to update their
+browsers to IE10. However that is not the case for many IE8 users who are 
+restricted by their use of WinXP. The options are to install FF/Chrome or even
+ChromeFrame within IE8, all of which will permit the full working of the theme.
+Alongside that, an ie.css file has been included with sufficient hacks to make
+the theme usable on IE8.
+CONSIDER - creating a fixed lt-ie10 theme to package with this one and include
+instructions for setting the device detection - this could be created without
+the HTML5 and flexbox using more standard layouts???
+
+
+

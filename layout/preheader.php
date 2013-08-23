@@ -38,6 +38,9 @@ if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
 
+if (check_browser_version('MSIE') && !check_browser_version('MSIE', '9.0') && !check_browser_version('MSIE', '10.0')) {
+    $bodyclasses[] = 'lt-ie10';
+}
 
 $courseheader = $coursecontentheader = $coursecontentfooter = $coursefooter = '';
 if (empty($PAGE->layout_options['nocourseheaderfooter'])) {

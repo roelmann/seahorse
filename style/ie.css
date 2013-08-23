@@ -1,0 +1,95 @@
+/*  LT IE10 do not support flexbox. They are
+ * created here as very simple display:block/float:left objects
+ * Layout pages should be created with browser warnings to the effect
+ * that the theme is intended for UPTO-DATE browsers only at this stage.
+ * Further fallbacks may be added in the future to create the same 
+ * effects in older IE versions (maybe, possibly, perhaps ;) ) But the
+ * purpose of the theme was to try out flexbox as a simple(r) layout
+ * option, so adding additional complication to cope with out of date
+ * browsers is counterproductive - CSS only solutions will be considered
+ * layout file changes will not.
+ ***********************************************************************/
+/* Main layout IE options
+ *========================*/
+.lt-ie10 article, .lt-ie10 aside, .lt-ie10 nav {
+    display:block;
+}
+body.lt-ie10 {
+    width:960px;
+    margin:0 auto;
+}
+    
+.lt-ie10 #outerwrapper {
+    display:block;
+    margin:0 auto;
+    width:960px;
+}
+.lt-ie10 #outerwrapper section.main {
+    float: left;
+    width:570px;
+    margin:0;
+}
+.lt-ie10 #outerwrapper aside.pre, .lt-ie10 #outerwrapper aside.post {
+    float:left;
+    width:180px;
+    margin:0;
+}
+.dir-rtl .lt-ie10 #outerwrapper section.main, .dir-rtl .lt-ie10 #outerwrapper aside.pre, .dir-rtl .lt-ie10 #outerwrapper aside.post {
+    float:right;
+}
+#page-site-index.lt-ie10 #outerwrapper section.main {
+    width:750px;
+}
+
+/* Sidebars - remove flexbox settings
+ *====================================*/
+.lt-ie10 aside.pre .region-content, .lt-ie10 aside.post .region-content {
+    display:block;
+}
+
+/* FrontPage Marketing block
+ *===========================*/
+.lt-ie10 .marketingone, .lt-ie10 .marketingtwo {
+    display:block;
+}
+.lt-ie10 .marketingone .marketingonetext {
+    float:left;
+    width:24%;
+}
+.lt-ie10 .marketingone .marketingoneimagelarge {
+    float:left;
+    width:50%;
+}
+.lt-ie10 .marketingone .marketingoneimagesmall {
+    float:left;
+    width:25%;
+}
+.lt-ie10 .marketingtwo .marketingtwobox {
+    width:30%;
+    margin:0 auto;
+}
+.dir-rtl .lt-ie10 .marketingone .marketingoneimagelarge, .dir-rtl .lt-ie10 .marketingone .marketingoneimagesmall, .dir-rtl .lt-ie10 .marketingone .marketingonetext {
+    float:right;
+}
+.dir-rtl .lt-ie10 .marketingone .marketingoneimagesmall {
+    padding-left:0;
+    padding-right:1%;
+}
+
+/* My Home page
+ *==============*/
+#page-my-index.lt-ie10  section.main {
+    float: left;
+    width:570px;
+}
+#page-my-index.lt-ie10  aside.pre, #page-my-index.lt-ie10 aside.post {
+    float:left;
+    width:180px;
+}
+#page-my-index.lt-ie10  aside.pre .region-content {
+    display:block;
+}
+#page-my-index.lt-ie10 #outerwrapper {
+    width:760px;
+    float:right;
+}
