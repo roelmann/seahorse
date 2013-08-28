@@ -28,7 +28,10 @@ $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-
     $haslinkedin = (!empty($PAGE->theme->settings->linkedin));
     $hasyoutube = (!empty($PAGE->theme->settings->youtube));
     $hasflickr = (!empty($PAGE->theme->settings->flickr));
-    $hasfootnote = (empty($PAGE->theme->settings->footnote)) ? false : $PAGE->theme->settings->footnote;
+    $hasfootnoteleft = (empty($PAGE->theme->settings->footnoteleft)) ? false : $PAGE->theme->settings->footnoteleft;
+    $hasfootnotecenter = (empty($PAGE->theme->settings->footnotecenter)) ? false : $PAGE->theme->settings->footnotecenter;
+    $hasfootnoteright = (empty($PAGE->theme->settings->footnoteright)) ? false : $PAGE->theme->settings->footnoteright;
+    $hasfootnote = (!empty($PAGE->theme->settings->footnoteleft) && !empty($PAGE->theme->settings->footnotecenter) && !empty($PAGE->theme->settings->footnoteright));
     $hascopyright = (empty($PAGE->theme->settings->copyright)) ? false : $PAGE->theme->settings->copyright;
 
 $custommenu = $OUTPUT->custom_menu();

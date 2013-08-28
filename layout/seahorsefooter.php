@@ -5,7 +5,11 @@
         <div id="page-footer" class="clearfix">
 
             <?php if ($hasfootnote) {
-                echo '<div class="footnote">'.$hasfootnote.'</div>';
+                echo '<div class="footnotes">';
+                    echo '<div class="footnoteleft">'.$hasfootnoteleft.'</div>';
+                    echo '<div class="footnotecenter">'.$hasfootnotecenter.'</div>';
+                    echo '<div class="footnoteright">'.$hasfootnoteright.'</div>';
+                echo '</div>';
             } ?>
             <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
             <?php

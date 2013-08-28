@@ -153,10 +153,26 @@ defined('MOODLE_INTERNAL') || die;
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $temp->add($setting);
     
-    // Footnote setting.
-    $name = 'theme_seahorse/footnote';
-    $title = get_string('footnote', 'theme_seahorse');
-    $description = get_string('footnotedesc', 'theme_seahorse');
+    // Footnote settings.
+    $name = 'theme_seahorse/footnoteleft';
+    $title = get_string('footnoteleft', 'theme_seahorse');
+    $description = get_string('footnoteleftdesc', 'theme_seahorse');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_seahorse/footnotecenter';
+    $title = get_string('footnotecenter', 'theme_seahorse');
+    $description = get_string('footnotecenterdesc', 'theme_seahorse');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_seahorse/footnoteright';
+    $title = get_string('footnoteright', 'theme_seahorse');
+    $description = get_string('footnoterightdesc', 'theme_seahorse');
     $default = '';
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
