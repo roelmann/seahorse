@@ -22,6 +22,14 @@ $hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->regio
 $haslogininfo = (empty($PAGE->layout_options['nologininfo']));
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
+    $hasfacebook = (!empty($PAGE->theme->settings->facebook));
+    $hastwitter = (!empty($PAGE->theme->settings->twitter));
+    $hasgoogleplus = (!empty($PAGE->theme->settings->googleplus));
+    $haslinkedin = (!empty($PAGE->theme->settings->linkedin));
+    $hasyoutube = (!empty($PAGE->theme->settings->youtube));
+    $hasflickr = (!empty($PAGE->theme->settings->flickr));
+    $hasfootnote = (empty($PAGE->theme->settings->footnote)) ? false : $PAGE->theme->settings->footnote;
+    $hascopyright = (empty($PAGE->theme->settings->copyright)) ? false : $PAGE->theme->settings->copyright;
 
 $custommenu = $OUTPUT->custom_menu();
 $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custommenu));

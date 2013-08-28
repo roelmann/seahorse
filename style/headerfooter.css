@@ -29,7 +29,7 @@ header {
     color: [[setting:themeheadingtextcolor]];
     text-shadow: 1px 1px 1px [[setting:thememenu1color]];
     margin-left: 91px;
-    margin-top: 73px;
+    margin-top: 35px;
 }
 .headermenu {
     font-size:1em;
@@ -117,12 +117,13 @@ nav#breadcrumb {
     background: none repeat scroll 0 0 transparent;
 }
 
-/* Footer
-   ------ */
-
-footer .social {
-    padding-top:15px;
+.social {
+    margin: 0 0 0 150px;
+    padding-top: 12px;
+    width: 200px;
 }
-footer .social img {
-    margin:0 5px;
+.social img {
+    height: 24px;
+    margin: 0 2px;
+    width: 24px;
 }
