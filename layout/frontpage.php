@@ -116,16 +116,6 @@ if ($hasmarketingsmall3text) {
                 </article> <!-- Close article mainsection. -->
             </section> <!-- Close section main. -->
             
-            <?php if ($hassidepre) { ?>
-                <aside class='pre'>
-                    <div id="region-pre" class="block-region">
-                        <div class="region-content">
-                            <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
-                        </div> <!-- Close region-content. -->
-                    </div> <!-- Close region-pre block-region. -->
-                </aside> <!-- Close aside pre. -->
-            <?php } ?> <!-- End if sidepre. -->
-            
             <?php if ($hassidepost) { ?>
                 <aside class='post'>
                     <div id="region-post" class="block-region">
