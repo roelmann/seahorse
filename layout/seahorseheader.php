@@ -23,7 +23,6 @@
                         <?php } ?>
                         <?php echo ' ';?><!--Ensures something is present even if no icons are to maintain the spacing so the div doesn't collapse with no content-->
                     </div>
-                <h1 class="headermain"><?php echo $PAGE->heading ?></h1>
                 <div class="headermenu">
 
                     <?php
@@ -37,6 +36,7 @@
                            echo $PAGE->headingmenu;
                     ?>
                 </div> <!-- Close headermenu. -->
+                <h1 class="headermain"><?php echo $PAGE->heading ?></h1>
                 <?php
                     if (check_browser_version('MSIE') && !check_browser_version('MSIE', '9.0') && !check_browser_version('MSIE', '10.0')) {
                         ?>

@@ -30,9 +30,12 @@ header {
     text-shadow: 1px 1px 1px [[setting:thememenu1color]];
     margin-left: 91px;
     margin-top: 35px;
+    float:left;
+    clear:both;
 }
 .headermenu {
     font-size:1em;
+    float:right;
 }
 .logininfo {
     color:[[setting:themeheadingtextcolor]];
@@ -121,6 +124,7 @@ nav#breadcrumb {
     margin: 0 0 0 150px;
     padding-top: 12px;
     width: 200px;
+    float:left;
 }
 .social img {
     height: 24px;
