@@ -83,4 +83,5 @@ class theme_seahorse_core_renderer extends core_renderer {
         // Return the sub menu
         return $content;
     }
+
 }
