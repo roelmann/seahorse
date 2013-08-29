@@ -161,10 +161,14 @@
     clear:both;
 }
 /* Style front page News */
-#page-site-index #outerwrapper section.main .region-content #site-news-forum .forumpost {
-    border: none;
+#page-site-index #outerwrapper section.main .region-content #site-news-forum {
+    border:1px solid [[setting:themeheading1color]];
+    border-radius:7px;
+    padding:0 10px;
+    margin-top:10px;
+            -webkit-box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+            box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
-
 /* Style front page course list as boxes  - should be flexbox, but this is going
  * to NEED flexwrap and as FF doesn't support that at present and would need this
  * fallback anyway I've stuck to inline solution */
@@ -268,6 +272,10 @@
 /* Style topic0 on front page
  * -------------------------- */
 #page-site-index #outerwrapper article.mainsection .region-content .generalbox {
-    border:none;
+    background-color: [[setting:themecolor]];
+    border-radius:7px;
+    border:1px solid [[setting:themeheading1color]];
+            -webkit-box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+            box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
 

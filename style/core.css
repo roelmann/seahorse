@@ -145,9 +145,37 @@ select option {
     background-color: [[setting:themecolor]];
     border-radius:7px;
     border:1px solid [[setting:themeheading1color]];
-    list-style: none outside none;
     margin: 0 0 5px;
     padding: 0;
                 -webkit-box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
             box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
+
+/* Forums
+ *--------*/
+.path-mod-forum .forumheaderlist th {
+        background-color: [[setting:themeheading1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheading1color]]), to([[setting:themeheading2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheading1color]], [[setting:themeheading2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+    color: [[setting:themeheadingtextcolor]];
+    border:1px solid [[setting:themeheading1color]];
+}
+.path-mod-forum .forumheaderlist td {
+    border:1px solid [[setting:themeheading1color]];
+}
+.forumpost {
+    background-color: [[setting:themecolor]];
+    border-radius:7px;
+    border:1px solid [[setting:themeheading1color]];
+            -webkit-box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+            box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+.forumpost .row.header {
+    border-bottom:1px dotted [[setting:themeheading1color]];
+    background-color:#f2f2f2;
+    border-radius:6px 6px 0 0;
+}
+

@@ -67,7 +67,71 @@
     z-index:2000;
     border-top: 1px solid #1d7a62;
 }
+/* Custom Menu 
+   ----------- */
 
+nav#menu {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    background: none repeat scroll 0 0 transparent;
+}
+.nav {
+    width: 90%;
+    margin: -25px auto 0 auto;
+    padding-left: 15px;
+    border-radius: 17px 17px 0 0;
+    border: 1px solid [[setting:themeheadingtextcolor]];
+    background-color: [[setting:thememenu1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:thememenu1color]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+.nav > li {
+    border-top: 3px solid [[setting:themeheadingtextcolor]];
+    border-left: 2px solid [[setting:thememenu1color]];
+    border-radius: 17px 0 0 0;
+    padding-right:15px;
+    margin-left:-15px;
+    color:[[setting:themeheading2color]];
+}
+.nav li a {
+    color:[[setting:themeheading2color]];
+}
+.nav li a:hover {
+    color:[[setting:themeheading1color]];
+}
+.nav li li a {
+    background: none repeat scroll 0 0 [[setting:thememenu1color]];
+    border-top: 1px solid [[setting:thememenu2color]];
+}
+.nav li li li a {
+    background: none repeat scroll 0 0 [[setting:thememenu2color]];
+    border-top: 1px solid [[setting:themeheadingtextcolor]];
+}
+.toggleMenu {
+    margin: -25px 0 0 5%;
+    border-radius: 17px;
+    border: 2px solid [[setting:themeheadingtextcolor]];
+    background-color: [[setting:thememenu1color]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:thememenu1color]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:thememenu1color]], [[setting:thememenu2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    color: [[setting:themeheading2color]];
+    display: none;
+    padding: 10px 15px;
+}
+@media screen and (max-width: 720px) {
+    .nav {
+        width:50%;
+        margin:-25px auto 0 auto;
+    }
+}
 @media screen and (max-width: 720px) {
     .active {
         display: block;
