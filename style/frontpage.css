@@ -207,6 +207,7 @@
     height:100px;
     overflow:hidden;
     position:absolute;
+    font-size:0.8em;
 }
 #page-site-index #frontpage-course-list .courses .coursebox .content .courseimage {
     width:18.1%;
