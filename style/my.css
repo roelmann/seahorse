@@ -39,3 +39,6 @@
     margin: 0;
     padding: 0;
 }
+.block_course_overview .content h2.title {
+    font-size: 1.25em;
+}
