@@ -7,6 +7,8 @@
     background-image:      -o-linear-gradient(top, [[setting:themeblock1color]], [[setting:themeblock2color]]); /* Opera 11.10-12.00 */
     background-image:         linear-gradient(to bottom, [[setting:themeblock1color]], [[setting:themeblock2color]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
     border-radius:7px;
+                -webkit-box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+            box-shadow: 1px 2px 2px 0px [[setting:themeheading2color]]; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
 .block .header {
     border-radius:6px 6px 0 0;
